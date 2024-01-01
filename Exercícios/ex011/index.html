@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p><!--Sites ruins que os visitantes saem rápido o Google não recomenda para outras pessoas, sempre tem que pensar na experiência do usuario.-->
+    <picture>
+        <source media="(max-width:750px )" srcset="Imagens/foto-p.JPG" type="image/JPG">
+        <source media="(max-width:1050px )" srcset="Imagens/foto-m.JPG" type="image/JPG">
+        <img src="Imagens/foto-g.JPG" alt="Imagem flexível">
+        <!--A cada <source media= a imagem alternativa menos sempre tem que ficar acima da imagem maior. Em max-width sempre colocar 50px a mais para não aparecer a barra de rolagem em baixo. Em type="image/" nunca esquecer de colocar o tipo de arquivo da imagem (png, jpg)-->
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" controls> <!--preload="metadata" mostra as informações do audio e só toca quando o usuario dar o play, controls é o player que aparece no site.-->
+        <source src="midia/Pinions - Freedom Trail Studio.mp3" type="audio/mpeg">
+        <source src="midia/Pinions - Freedom Trail Studio.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Pinions - Freedom Trail Studio.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+        <!--Nesse caso se o navegador não for compatível com Mp3 ele tentará o OGG, caso não consiga aparecerá a menssagem do parágrafo.-->
+    </audio>
+   
+</body>
+</html>

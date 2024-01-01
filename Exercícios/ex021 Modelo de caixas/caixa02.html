@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(7, 94, 7);
+            background-color: rgb(186, 221, 243);
+
+        }/*O box-shadow é a sombra das caixas,
+           a ordem é horizontal, vertical, espalhamento e cor.
+           O border-radius é o arredondamento das caixas.*/
+        header {
+            background-color: aqua;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 5px 10px rgb(23, 97, 97);
+            border-radius: 0px 15px;
+        }
+        h1 {
+            text-align: center;
+        }
+        nav {
+            background-color: rgb(45, 197, 197);
+            box-shadow: 5px 5px 10px rgb(23, 97, 97);
+            border-radius: 2px;
+        }
+        /*Para colocar estilo exemplo no <a> que está dentro do <nav>, tem que colocar primeiro a tag de fora > tag de dentro*/
+        nav > a {
+            text-decoration: none;         
+            color: rgb(13, 85, 29);
+            font-weight: bold;
+            margin-right: 30px;
+            padding-right: 10px;
+            padding-left: 5px;
+            
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: aqua;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 5px 10px rgb(23, 97, 97);
+            border-radius: 0px 15px;
+        }
+        article {
+            background-color: rgb(45, 197, 197);
+            padding: 15px;
+            border-radius: 0px 10px;
+        }
+        article > h2 {
+            text-align: center;
+        }
+        article > p {
+            text-indent: 30px;
+        }
+        article > aside {
+            color: rgb(56, 56, 56);
+            background-color: rgb(38, 160, 160);
+            box-shadow: 5px 5px 10px rgb(23, 97, 97);
+            border-radius: 2px;
+           
+        }
+        article > aside > p {
+            text-align: right;
+            padding-right: 5px;
+            
+              
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header><!--Cabeçalho-->
+        <h1>Meu Site</h1>
+        <nav><!--Navegação-->
+            <a href="#">Home</a>
+            <a href="#">Cursos</a>
+            <a href="#">Contato</a>
+            <a href="#">Sobre</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+    <main><!--Conteúdo principal-->
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore molestias consectetur, recusandae dignissimos eligendi illum reprehenderit dicta nostrum tempore, magni optio commodi aperiam numquam odio qui? Eius veritatis molestiae sint.</p>
+                <aside><!--Conteúdo a parte-->
+                    <p>Artigo escrito por Ricardo</p>
+                </aside>
+            </article>
+        </section>
+
+    </main>
+    <footer><!--Rodapé-->
+        <p>Desenvolvido por Ricardo</p>
+    </footer>
+</body>
+</html>
